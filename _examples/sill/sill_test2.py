@@ -7,7 +7,7 @@ from numpy import sqrt, arange, dot, finfo
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from dmodels_py import sill
+from dmodelspy import sill
 
 
 eps = finfo('float').eps

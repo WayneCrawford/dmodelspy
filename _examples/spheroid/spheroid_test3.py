@@ -7,7 +7,7 @@ from numpy import arange, zeros, dot
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from dmodels_py import spheroid
+from dmodelspy import spheroid
 
 
 # ellipsoid parameters

@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from numpy import arange
 
-from dmodels_py import sphere2D, sphere3D_displ
+from dmodelspy import sphere2D, sphere3D_displ
 
 
 # read input data for flat half-space model (McTigue, 1987)
