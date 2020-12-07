@@ -1,0 +1,72 @@
+ HTDP (version 3.0) OUTPUT
+
+ TRANSFORMING POSITIONS FROM ITRF2005         (EPOCH = 05-14-2010)
+                          TO ITRF2000         (EPOCH = 05-14-2010)
+
+             INPUT COORDINATES   OUTPUT COORDINATES    INPUT VELOCITY
+
+ FLIN                    
+  LATITUDE     54 43 32.10164 N     54 43 32.10118 N      0.00 mm/yr  north
+  LONGITUDE   101 58 40.92777 W    101 58 40.92788 W      0.00 mm/yr  east
+  ELLIP. HT.            311.517            311.505 m      0.00 mm/yr  up
+  X                 -766174.661        -766174.664 m      0.00 mm/yr
+  Y                -3611375.333       -3611375.337 m      0.00 mm/yr
+  Z                 5184056.209        5184056.191 m      0.00 mm/yr
+
+ DAKA                    
+  LATITUDE     14 41  4.36354 N     14 41  4.36279 N      0.00 mm/yr  north
+  LONGITUDE    17 27 54.37199 W     17 27 54.37200 W      0.00 mm/yr  east
+  ELLIP. HT.             46.239             46.238 m      0.00 mm/yr  up
+  X                 5886683.181        5886683.186 m      0.00 mm/yr
+  Y                -1852123.048       -1852123.050 m      0.00 mm/yr
+  Z                 1606372.336        1606372.314 m      0.00 mm/yr
+
+ HRAO                    
+  LATITUDE     25 53 24.37455 S     25 53 24.37529 S      0.00 mm/yr  north
+  LONGITUDE   332 18 46.86709 W    332 18 46.86705 W      0.00 mm/yr  east
+  ELLIP. HT.           1414.153           1414.170 m      0.00 mm/yr  up
+  X                 5085352.461        5085352.465 m      0.00 mm/yr
+  Y                 2668395.928        2668395.932 m      0.00 mm/yr
+  Z                -2768731.448       -2768731.476 m      0.00 mm/yr
+
+ HARK                    
+  LATITUDE     25 53 13.58477 S     25 53 13.58551 S      0.00 mm/yr  north
+  LONGITUDE   332 17 32.06382 W    332 17 32.06378 W      0.00 mm/yr  east
+  ELLIP. HT.           1555.378           1555.395 m      0.00 mm/yr  up
+  X                 5084625.282        5084625.286 m      0.00 mm/yr
+  Y                 2670366.488        2670366.492 m      0.00 mm/yr
+  Z                -2768494.318       -2768494.346 m      0.00 mm/yr
+
+ KTSU                    
+  LATITUDE     55 59 35.69892 N     55 59 35.69846 N      0.00 mm/yr  north
+  LONGITUDE   267 12 22.19882 W    267 12 22.19870 W      0.00 mm/yr  east
+  ELLIP. HT.            210.025            210.013 m      0.00 mm/yr  up
+  X                 -174282.051        -174282.053 m      0.00 mm/yr
+  Y                 3571333.038        3571333.043 m      0.00 mm/yr
+  Z                 5264196.020        5264196.002 m      0.00 mm/yr
+
+ CEDU                    
+  LATITUDE     31 51 59.98573 S     31 51 59.98638 S      0.00 mm/yr  north
+  LONGITUDE   226 11 24.60553 W    226 11 24.60549 W      0.00 mm/yr  east
+  ELLIP. HT.            144.739            144.761 m      0.00 mm/yr  up
+  X                -3753472.801       -3753472.808 m      0.00 mm/yr
+  Y                 3912741.015        3912741.020 m      0.00 mm/yr
+  Z                -3347960.189       -3347960.218 m      0.00 mm/yr
+
+ MATE                    
+  LATITUDE     40 38 56.87742 N     40 38 56.87686 N      0.00 mm/yr  north
+  LONGITUDE   343 17 43.94100 W    343 17 43.94097 W      0.00 mm/yr  east
+  ELLIP. HT.            535.658            535.648 m      0.00 mm/yr  up
+  X                 4641949.462        4641949.466 m      0.00 mm/yr
+  Y                 1393045.523        1393045.525 m      0.00 mm/yr
+  Z                 4133287.548        4133287.529 m      0.00 mm/yr
+
+ BRAZ                    
+  LATITUDE     15 56 50.90703 S     15 56 50.90780 S      0.00 mm/yr  north
+  LONGITUDE    47 52 40.32923 W     47 52 40.32928 W      0.00 mm/yr  east
+  ELLIP. HT.           1106.014           1106.027 m      0.00 mm/yr  up
+  X                 4115014.085        4115014.088 m      0.00 mm/yr
+  Y                -4550641.589       -4550641.594 m      0.00 mm/yr
+  Z                -1741443.893       -1741443.920 m      0.00 mm/yr
+
+

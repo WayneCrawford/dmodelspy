@@ -1,0 +1,8 @@
+ll	  1e10	                first lame's constant  
+G	   1e10	                shear modulus          
+E	   G*(3*ll+2*G)/(ll+G)	 Young's module         
+nu	  0.5*ll/(ll+G)	       Poisson's ratio        
+rho	 2670	                crust density          
+U1	  0	                   strike slip            
+U2	  0	                   dip slip               
+U3	  1	                   tensile opening        
