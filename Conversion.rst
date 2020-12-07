@@ -9,18 +9,19 @@ Removed/replaced smop-specific functions/lines
 
 smop always replaces `a * b` with `dot(a, b)` and `a .* b` with `multiply(a, b)`
 When dealing with vectors or matrices, the matlab -> numpy equivalences are:
-    - Matlab `*` = numpy `@`
-    - Matlab `.*` = numpy `*`
-The latter works for scalars, too, but `@` does not.  If one of the values is
-always a scalar, one can replace `*` by `*`.  If it may or may not be a scalar,
-one should use `dot()` (this is what smop does)
+
+- Matlab ``*`` = numpy ``@`` # For matrices
+- Matlab ``*`` = numpy ``*`` # If one of the values is a scalar
+- Matlab ``a * b`` = numpy ``dot(a, b)`` # If it could be one or the other
+- Matlab ``.*`` = numpy ``*`` 
 
 Replaced:
 ##########
 
-- `dot(a,b)` with `a @ b` (if both are always matrices)
-- `multiply(a,b)` with `a * b`
-- `fclose(all)` with `plt.show`
+- ``dot(a,b)`` with ``a @ b`` (if both are always matrices)
+- ``dot(a,b)`` with ``a * b`` (if a is a scalar)
+- ``multiply(a,b)`` with ``a * b``
+- ``fclose(all)`` with ``plt.show()``
     
 Forced arrays/matrices to have known dimensions
 ----------------------
