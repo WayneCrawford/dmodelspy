@@ -1,6 +1,11 @@
 """
 Deformation forward modeling routines
 
+Sill class (based on Fialko et al. 2001)
+sphere2D function (based on McTigue 1987)
+sphere3D_displ and sphere3D_strain functions (based on McTigue 1987)
+spheroid and spheroid_displ functions (based on Yang et al. 1988)
+
 ==========================================================================
  USGS Software Disclaimer
  The software and related documentation were developed by the U.S.
@@ -16,6 +21,7 @@ Deformation forward modeling routines
  an attempt to fix reported problems and help whenever possible.
 ==========================================================================
 """
-from .sill import sill, sill_displ
+from .sill_old import sill, sill_displ
+from .sill import Sill
 from .sphere import sphere2D, sphere3D_displ, sphere3D_strain
 from .spheroid import spheroid, spheroid_displ

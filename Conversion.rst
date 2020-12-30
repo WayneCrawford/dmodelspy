@@ -2,10 +2,13 @@ Converting from Matlab to Python
 =================================
 
 Ran smop on m-file
-----------------------
+---------------------------------
+    
+Ran 2to3 on resulting python file
+---------------------------------
     
 Removed/replaced smop-specific functions/lines
-----------------------
+---------------------------------
 
 smop replaces ``a * b`` with ``dot(a, b)`` and ``a .* b`` with ``multiply(a, b)``
 When dealing with vectors or matrices, the matlab -> numpy equivalences are:
@@ -14,6 +17,20 @@ When dealing with vectors or matrices, the matlab -> numpy equivalences are:
 - Matlab ``*`` = numpy ``*`` # If one of the values is a scalar
 - Matlab ``a * b`` = numpy ``dot(a, b)`` # If it could be one or the other
 - Matlab ``.*`` = numpy ``*`` 
+
+Removed:
+##########
+
+- ``@function`` decorator,
+- ``nargin`` and ``varargin`` lines
+- ``*args`` and ``**kwargs`` attributes
+- ``nargin`` attribute in function calls
+
+Added:
+##########
+
+- ``return`` line with the appropriate attributes (had to look in original
+  Matlab file)
 
 Replaced:
 ##########
@@ -50,3 +67,7 @@ Forced arrays/matrices to have known dimensions
 ----------------------
 - for the "benchmark locations" x, y, z, start the function with
   `x = array(x, ndmin=1), `y = array(y, ndmin=1)`, `z = array(z, ndmin=1)`
+
+- at the end of the file, force output variables to have the same dimensionality
+  as the input variables, e.g:
+  `u = u.reshape(x.shape)`

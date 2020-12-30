@@ -1,21 +1,37 @@
-Python port of Battaglia et al (2013) Matlab codes
+dmodelspy
+---------------------------------------------------
 
-Currently only ``sill``, ``spheroid`` and ``sphere`` have been converted
+Python conversion of Matlab dmodel routines (Battaglia et al., JVGR, 2013)
 
-You can install the module in your environment by by installing `pip`, then typing:
-``pip install -e dmodelspy`` at the command line, just above the dmodelspy directory
+Converted
+===========
 
-The ``_examples/`` directory has examples of running the codes
+- sphere: (3Dstrain surely doesn't work as there was no example to verify against)
+- spheroid:
+- sill: Made Sill class (v0.1.1)
 
-Regularized the function names to 
+ToDo
+===========
+- Convert sphere functions to Sphere2D and Sphere3D classes
+- Convert spheroid functions to Spheroid class
+- Make a Mogi class
+- Add volume change to Sphere and Spheroid classes
+- Add test code
 
-- ``{geometry}_displ`` (returns displacement terms)
-- ``{geometry}_strain`` (returns strain terms)
-- ``{geometry}`` (returns all terms).  
+Class principals
+===========
 
-But not all geometries have all these funtions. Current functions are ``sphere2D``, ``sphere3D_displ``, ``sphere3D_strain``,
-``spheroid``, ``spheroid_displ``, ``sill`` and ``sill_displ``.
+Classes use the dataclass decorator
 
-Conversions verified using dMODELS examples, nothing more.
+Each class should have the following functions:
 
-Still needs test cases (doctest and pytest)
+- calc(x,y,z): performs all of the fundamental calculations for the given points
+- calc_disp(x,y,z): returns displacements (u, v, w)
+- calc_dV(x,y,z): returns volume change
+- calc_tilts(x,y,z): returns tilts (East and North)
+- calc_strain(x,y,z): returns strains (areal, shear1 and shear2)
+- calc_all(x,y,z): returns all values: u, v, w, dV, tiltE, tiltN, areal, shear1, shear2
+
+x, y and z can be vectors or 1d numpy arrays.  x and y should have the same
+length.  z should have the same length or be a scalar, in which case the same z
+will be used for each (x, y) pair)
