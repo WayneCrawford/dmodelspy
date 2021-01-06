@@ -4,19 +4,19 @@ dmodelspy
 Python conversion of Matlab dmodels routines (Battaglia et al., JVGR, 2013)
 
 Converted
-===========
+================
 
 - sill: Made Sill class (v0.1.1)
 - sphere: Made Sphere2D and Sphere3D classes (v0.1.2)
 - spheroid: Make Spheroid class (v0.1.3)
 
 Added
-===========
+================
 
-- Mogi class
+- Mogi class (v0.1.3)
 
 Class principals
-===========
+================
 
 Classes use the dataclass decorator
 

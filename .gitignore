@@ -1,3 +1,5 @@
 .eggs
 dmodelspy.egg-info/
 dmodelspy/__pycache__/
+build/
+dist/

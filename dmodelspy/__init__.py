@@ -26,9 +26,6 @@ from .sill import Sill
 from .sphere2D import Sphere2D
 from .sphere3D import Sphere3D
 from .spheroid import Spheroid
-from .spheroid_old import spheroid, spheroid_displ
-from .sill_old import sill, sill_displ
-from .sphere_old import sphere2D, sphere3D_displ, sphere3D_strain
 
 from .version import __version__
 
