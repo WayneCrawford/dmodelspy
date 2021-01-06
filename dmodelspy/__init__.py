@@ -21,10 +21,12 @@ spheroid and spheroid_displ functions (based on Yang et al. 1988)
  an attempt to fix reported problems and help whenever possible.
 ==========================================================================
 """
+from .mogi import Mogi
 from .sill import Sill
 from .sphere2D import Sphere2D
 from .sphere3D import Sphere3D
-from .spheroid import spheroid, spheroid_displ
+from .spheroid import Spheroid
+from .spheroid_old import spheroid, spheroid_displ
 from .sill_old import sill, sill_displ
 from .sphere_old import sphere2D, sphere3D_displ, sphere3D_strain
 
@@ -75,6 +77,30 @@ volume = {254},
 number = {}, 
 pages = {1–4}, 
 year = {2013}, 
+abstract = {}, 
+location = {}, 
+keywords = {}},
+
+@Article{Newman2006,
+author = {Newman, Andrew V. and Dixon, Timothy H. and Gourmelen, Noel}, 
+title = {A four-dimensional viscoelastic deformation model for Long Valley Caldera, California, between 1995 and 2000}, 
+journal = {J. Volc. Geotherm. Res.}, 
+volume = {150}, 
+number = {1-3}, 
+pages = {244--269}, 
+year = {2006}, 
+abstract = {}, 
+location = {}, 
+keywords = {}},
+
+@Article{Mogi1958,
+author = {Mogi, Kiyoo}, 
+title = {Relations between the eruptions of various volcanoes and the deformatins of the ground surfaces around them}, 
+journal = {Bull. Earthq Res Inst Univ Tokyo}, 
+volume = {36}, 
+number = {2}, 
+pages = {99-134}, 
+year = {1958}, 
 abstract = {}, 
 location = {}, 
 keywords = {}}

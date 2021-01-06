@@ -147,6 +147,8 @@ class Sill:
         x = (array(x, ndmin=1) - self.x0) / self.a
         y = (array(y, ndmin=1) - self.y0) / self.a
         z = (array(z, ndmin=1) - self.z0) / self.a
+        # print(f'{x.shape=}')
+        # print(f'{x=}')
         # compute radial distance
         r = sqrt(x**2 + y**2)
         h = self.z0 / self.a                      # dimensionless source depth

@@ -51,6 +51,7 @@ def yangdisp(x0, y0, z0, a, b, lambda_, mu, nu, P, theta, phi, x, y, z):
 
     # compute the parameters for the spheroid model
     a1, b1, c, Pdila, Pstar = yangpar(a, b, lambda_, mu, nu, P)
+    # print(f'{a1=}, {b1=}, {c=}, {Pdila=}, {Pstar=}')
     # translate the coordinates of the points where the displacement is computed
     # in the coordinates systen centered in (x0,0)
     xxn = x - x0
@@ -63,6 +64,7 @@ def yangdisp(x0, y0, z0, a, b, lambda_, mu, nu, P, theta, phi, x, y, z):
     U1p, U2p, U3p = yangint(xxp, yyp, z, z0, theta, a1, b1, a, b, c, mu, nu, Pdila)
     # compute displacement for a prolate ellipsoid at csi = -c
     U1m, U2m, U3m = yangint(xxp, yyp, z, z0, theta, a1, b1, a, b, -c, mu, nu, Pdila)
+
     Upx = -U1p - U1m
     Upy = -U2p - U2m
     Upz = U3p + U3m

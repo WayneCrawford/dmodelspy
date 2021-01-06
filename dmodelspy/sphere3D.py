@@ -82,14 +82,20 @@ class Sphere3D:
         R = sqrt(rho**2 + (1 - zeta)**2)
         sint = rho / R
         cost = (1 - zeta) / R
+        
+        ###########
+        # The following do not depend on x, y, z and could be separated, but
+        # but they're too quick to care about...
         C3 = [dot(e, (1 + self.nu)) / (dot(12, (1 - self.nu))),
               dot(dot(5, e**3), (2 - self.nu))
               / (dot(24, (7 - dot(5, self.nu))))]
         D3 = [dot(-e**3, (1 + self.nu)) / 12,
               dot(e**5, (2 - self.nu)) / (dot(4, (7 - self.nu)))]
         P0 = 1
-        P2 = dot(0.5, (dot(3, cost**2) - 1))
         dP0 = 0
+        ###########
+        
+        P2 = dot(0.5, (dot(3, cost**2) - 1))
         dP2 = dot(3, cost)
         ur38 = -0.5 * P0 * D3[0] / R**2\
             + multiply((C3[1] * (5 - 4*self.nu) - 1.5 * D3[1] / R**2), P2)\
@@ -139,8 +145,9 @@ class Sphere3D:
         v = dot(dot(v, self.P_G), self.z0)
         w = dot(dot(w, self.P_G), self.z0)
 
-        for var in [u, v, w]:
-            var = var.reshape(x.shape)
+        u = u.reshape(x.shape)
+        v = v.reshape(x.shape)
+        w = w.reshape(x.shape)
         return u, v, w
 
     def calc_tilt(self, x, y, z):
